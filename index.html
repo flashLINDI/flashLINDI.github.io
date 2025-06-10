@@ -3,101 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Cover - Untitled-1</title>
+  <title>True Studio Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center/cover;
+      background: url('your-background.jpg') no-repeat center center/cover;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
       position: relative;
+      overflow: auto;
+      color: #000;
     }
-    .cover-overlay {
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
+    .navbar {
+      position: fixed;
       top: 0;
+      width: 100%;
+      background: #ccc;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar a {
+      margin: 0 15px;
+      color: #000;
+      text-decoration: none;
+    }
+    .navbar .eyes {
+      font-size: 2em;
+    }
+    .desktop {
+      position: absolute;
+      top: 60px;
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 1;
-    }
-    .cover-content {
-      position: relative;
-      z-index: 2;
-      text-align: left;
       padding: 20px;
-      background: rgba(255, 255, 0, 0.9);
-      border: 2px solid #000;
-      max-width: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    h1 {
-      font-size: 3em;
-      margin: 0 0 10px;
-      color: #000;
-      font-weight: bold;
+    .icon {
+      width: 100px;
+      text-align: center;
+      cursor: pointer;
     }
-    .details {
-      margin: 10px 0;
-      color: #000;
+    .icon img {
+      width: 80px;
+      height: 80px;
     }
-    .details p {
-      margin: 5px 0;
+    .icon p {
+      margin: 5px 0 0;
+      font-size: 12px;
     }
-    .details span {
-      font-weight: bold;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-right: 10px;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .buttons a:hover {
-      background: #333;
-    }
-    nav {
+    .todo {
       position: absolute;
-      top: 20px;
+      top: 100px;
       left: 20px;
-      z-index: 3;
+      background: #ffff99;
+      padding: 10px;
+      border: 1px solid #000;
+      width: 200px;
     }
-    nav a {
-      color: #fff;
-      margin-right: 15px;
+    a {
+      color: #000;
       text-decoration: none;
     }
-    nav a:hover {
+    a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="cover-overlay"></div>
-  <nav>
-    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="projects.html">Projects</a>
-  </nav>
-  <div class="cover-content">
-    <h1>Untitled-1</h1>
-    <div class="details">
-      <p><span>Mar. 15, 2025</span> Lorem ipsum dolor sit, Amet Consec Eiusmod Tempor, 2025</p>
-      <p><span>Mar. 22, 2025</span> Nullam Varius, Turpis ET Scelerisque, 2025</p>
-      <p><span>Mar. 23, 2025</span> Fusc ID Dui, Sit Ametus, 2025</p>
-      <p><span>Apr. 3, 2026</span> Tristique Neque Consequat, ES Sapien Varius Nunc, 2025</p>
+  <div class="navbar">
+    <div>
+      <a href="index.html">True Studio</a>
+      <a href="info.html">Information</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="buttons">
-      <a href="#">Shop</a>
-      <a href="#">IG</a>
-    </div>
+    <div class="eyes">👀</div>
   </div>
+  <div class="desktop">
+    <div class="icon">
+      <a href="project1.html"><img src="folder.png" alt="Folder"></a>
+      <p><a href="project1.html">Project 1 (Private)</a></p>
+    </div>
+    <div class="icon">
+      <a href="project3.html"><img src="folder.png" alt="Folder"></a>
+      <p><a href="project3.html">Project 3 (Moods)</a></p>
+    </div>
+    <div class="icon">
+      <a href="project4.html"><img src="folder.png" alt="Folder"></a>
+      <p><a href="project4.html">Project 4 (Rorschach)</a></p>
+    </div>
+    <!-- 添加更多项目文件夹，类似地创建 project2.html 等 -->
+  </div>
+  <div class="todo">
+    <h3>Todo this week</h3>
+    <ul>
+      <li>To do number one</li>
+      <li>To do number two</li>
+      <li>Number Four</li>
+      <li>To do number Five</li>
+    </ul>
+  </div>
+  <!-- 可选添加其他图标，如 PDF、垃圾桶 -->
 </body>
 </html>
