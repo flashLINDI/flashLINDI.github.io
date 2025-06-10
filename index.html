@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Cover - Untitled-1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: relative;
+    }
+    .cover-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .cover-content {
+      position: relative;
+      z-index: 2;
+      text-align: left;
+      padding: 20px;
+      background: rgba(255, 255, 0, 0.9);
+      border: 2px solid #000;
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+      color: #000;
+      font-weight: bold;
+    }
+    .details {
+      margin: 10px 0;
+      color: #000;
+    }
+    .details p {
+      margin: 5px 0;
+    }
+    .details span {
+      font-weight: bold;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .buttons a:hover {
+      background: #333;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+    }
+    nav a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover-overlay"></div>
+  <nav>
+    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="projects.html">Projects</a>
+  </nav>
+  <div class="cover-content">
+    <h1>Untitled-1</h1>
+    <div class="details">
+      <p><span>Mar. 15, 2025</span> Lorem ipsum dolor sit, Amet Consec Eiusmod Tempor, 2025</p>
+      <p><span>Mar. 22, 2025</span> Nullam Varius, Turpis ET Scelerisque, 2025</p>
+      <p><span>Mar. 23, 2025</span> Fusc ID Dui, Sit Ametus, 2025</p>
+      <p><span>Apr. 3, 2026</span> Tristique Neque Consequat, ES Sapien Varius Nunc, 2025</p>
+    </div>
+    <div class="buttons">
+      <a href="#">Shop</a>
+      <a href="#">IG</a>
+    </div>
+  </div>
+</body>
+</html>
